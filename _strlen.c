@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * _strlen - return string len.
+ * _strlen - the return string len.
  *
- * @line: string that we need it's len.
+ * @line: the string that we need it's len.
  *
- * Return: strlen of string.
+ * Return: the strlen of string.
  */
 int _strlen(char *line)
 {

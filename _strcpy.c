@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * _strcpy - return string copy.
+ * _strcpy - to return string copy.
  *
- * @dest: string that we need to copy in.
- * @src: string to copy from.
+ * @dest: the string  we need to copy in.
+ * @src: the string to copy from.
  *
  * Return: 0 on fail, 1 on sccess
  */

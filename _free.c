@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * free_arr - to free 2d array.
+ * free_arr - which free 2d array.
  *
  * @arr: array to free.
  *
@@ -10,15 +10,15 @@
 
 void free_arr(char **arr)
 {
-	int i = 0;
+	int j = 0;
 
 	if (arr == NULL)
 		return;
 
-	while (arr[i] != NULL)
+	while (arr[j] != NULL)
 	{
-		free(arr[i]);
-		i++;
+		free(arr[j]);
+		j++;
 	}
 	free(arr);
 }

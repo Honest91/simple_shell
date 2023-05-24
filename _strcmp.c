@@ -1,28 +1,28 @@
 #include "shell.h"
 
 /**
- * _strcmp - compare two strings.
+ * _strcmp - to compare two strings.
  *
- * @s1: first string
- * @s2: second string
- * @len: length to compare in
+ * @s1: the first string
+ * @s2: the second string
+ * @len: the  length to compare in
  *
  * Return: 0 in match -1 else.
  *
  */
 int _strcmp(char *s1, char *s2, size_t len)
 {
-	size_t i = 0;
+	size_t f = 0;
 
-	for (i = 0 ; s1[i] && s2[i] && i < len ; i++)
+	for (f = 0 ; s1[f] && s2[f] && f < len ; f++)
 	{
-		if (s1[i] != s2[i])
+		if (s1[f] != s2[f])
 		{
 			return (-1);
 		}
 	}
 
-	if (i == len)
+	if (f == len)
 		return (0);
 
 	return (-1);

@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * custom_commands - to handle things not exist in shell.
+ * custom_commands -  handle things not exist in shell.
  *
- * @tokens: commands to execute.
- * @env: environment.
+ * @tokens: the commands to execute.
+ * @env: the environment.
  *
  * Return: 1 on success, 0 on fail to found comand.
  *

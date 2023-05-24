@@ -2,11 +2,11 @@
 
 
 /**
- * _print - to print on screen depend on status
+ * _print -  print on screen depend on status need
  *
  * @status: state(0,1,2).
  * @av: arg values.
- * @message: message to print.
+ * @message: the message to print.
  *
  * Return: void.
  */
@@ -19,11 +19,11 @@ void _print(int status, char **av, char *message)
 
 
 /**
- * print_execute_error - to print on error for exe.
+ * print_execute_error -  print on error for exe.
  *
  * @status: state(0,1,2).
  * @av: arg values.
- * @command: faild command.
+ * @command: the faild command.
  *
  * Return: void.
  */

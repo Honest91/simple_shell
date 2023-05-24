@@ -1,32 +1,32 @@
 #include "shell.h"
 
 /**
- * _getenv - get environment depend on command.
+ * _getenv - to get environment depend on command.
  *
- * @env: environment.
- * @command: command to search about.
+ * @env: the environment.
+ * @command: the command to search about.
  *
- * Return: NULL if not exist else command
+ * Return: the NULL if not exist else command anymore
  */
 char *_getenv(char **env, char *command)
 {
-	int i = 0;
+	int f = 0;
 	int len = _strlen(command);
 
-	for (i = 0; env[i]; i++)
+	for (f = 0; env[f]; f++)
 	{
-		if (_strcmp(command, env[i], len) == 0)
-			return (env[i]);
+		if (_strcmp(command, env[f], len) == 0)
+			return (env[f]);
 	}
 
 	return (NULL);
 }
 
 /**
- * print_env - print environment.
+ * print_env - to print environment.
  *
  *
- * @env: environment to print.
+ * @env: the environment to print.
  *
  * Return: void.
  */
