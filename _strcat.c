@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * _strcat - concatinate two strings
+ * _strcat - to concatinate two strings
  *
- * @dest: first string and have the final result.
- * @src: string that we need to add.
+ * @dest: the 1st string and the final result.
+ * @src: the string that we need to add.
  *
  * Return: the new string.
  */
