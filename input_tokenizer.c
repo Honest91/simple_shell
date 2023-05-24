@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * tokens_number - to get number of tokens.
+ * tokens_number - the  number of tokens.
  *
- * @input: input to get from.
+ * @input: the input to get from.
  *
- * Return: number of tokens.
+ * Return: the number of tokens.
  */
 int tokens_number(char *input)
 {
@@ -24,17 +24,17 @@ int tokens_number(char *input)
 }
 
 /**
- * input_tokenizer - to tokenize user input.
+ * input_tokenizer - the  tokenize user input.
  *
- * @input: string to tokenize;
- * @av: arg values;
+ * @input: the string to tokenize;
+ * @av: the arg values;
  *
  * Return: tokens.
  */
 char **input_tokenizer(char *input, char **av)
 {
 	char *delim = " \t\r\n", *input_copy = NULL, *token;
-	int len = 0, i = 0;
+	int len = 0, f = 0;
 	char **tokens = NULL;
 
 	len = _strlen(input) + 1;
@@ -56,16 +56,16 @@ char **input_tokenizer(char *input, char **av)
 	token = strtok(input, delim);
 	while (token != NULL)
 	{
-		tokens[i] = malloc((_strlen(token) + 1) * sizeof(char));
+		tokens[f] = malloc((_strlen(token) + 1) * sizeof(char));
 		if (tokens == NULL)
 		{
 			free_arr(tokens);
 			_print(2, av, " :error in allocate memory");
 			return (NULL);
 		}
-		_strcpy(tokens[i], token);
+		_strcpy(tokens[f], token);
 		token = strtok(NULL, delim);
-		i++;
+		f++;
 	}
 	tokens[len] = NULL;
 	return (tokens);

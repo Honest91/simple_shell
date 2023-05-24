@@ -1,19 +1,19 @@
 #include "shell.h"
 
 /**
- * main - entry point to start program
+ * main - to entry the point to the start program
  *
- * @ac: arguments counter.
- * @av: arguments values.
+ * @ac: arguments of the  counter.
+ * @av: arguments of the  values.
  * @env: environment.
  *
- * Return: 0 on success
+ * Return: to return 0 on success
  */
 int main(int ac, char **av, char **env)
 {
-	int status;
+	int stat;
 
-	status = start_shell(ac, av, env);
+	stat = start_shell(ac, av, env);
 
-	return (status);
+	return (stat);
 }

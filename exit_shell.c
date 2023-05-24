@@ -2,9 +2,9 @@
 
 
 /**
- * exit_shell - exit shell.
+ * exit_shell - the exit shell.
  *
- * @tokens: commands to execute.
+ * @tokens:the commands to execute.
  *
  * Return: void.
  */

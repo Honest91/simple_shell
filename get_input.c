@@ -1,37 +1,37 @@
 #include "shell.h"
 
 /**
- * get_input - get input to shell exec
+ * get_input - to get input to the shell exec
  *
- * @av: arg values
+ * @av: arg of the values
  *
- * Return: line readed;
+ * Return: lineof the readed;
  */
 
 char *get_input(char **av)
 {
-	char *line = NULL;
-	size_t len = 0;
+	char *linee = NULL;
+	size_t length = 0;
 	ssize_t nread;
 
-	nread =  getline(&line, &len, stdin);
+	nread =  getline(&linee, &length, stdin);
 	if (nread == -1)
 	{
 		if (feof(stdin))
 		{
-			free(line);
+			free(linee);
 			exit(0);
 		}
 		else
 		{
 			_print(2, av, " :can not read input\n");
-			free(line);
+			free(linee);
 			return (NULL);
 		}
 	}
 
-	if (line[nread - 1] == '\n')
-		line[nread - 1] = '\0';
+	if (linee[nread - 1] == '\n')
+		linee[nread - 1] = '\0';
 
-	return (line);
+	return (linee);
 }

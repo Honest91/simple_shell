@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * execute_commands - to execute comands.
+ * execute_commands - the execute comands.
  *
- * @tokens: arguments to execute.
- * @av: argument values.
- * @env: environment.
+ * @tokens: the arguments to execute.
+ * @av: the argument values.
+ * @env: the environment.
  *
  * Return: void.
  */

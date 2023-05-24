@@ -1,7 +1,7 @@
 #ifndef SHELL_H
 #define SHELL_H
 
-/*lib*/
+/*libraries*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -10,7 +10,7 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
-/*main functions*/
+/* the main functions*/
 int start_shell(int ac, char **av, char **env);
 char *get_input(char **av);
 char **input_tokenizer(char *input, char **av);
@@ -23,7 +23,7 @@ void free_arr(char **arr);
 int custom_commands(char **tokens, char **env);
 void exit_shell(char **tokens);
 
-/*utili functions*/
+/*the utili functions*/
 int _strlen(char *line);
 int _strcpy(char *dest, char *src);
 int _strcmp(char *s1, char *s2, size_t len);

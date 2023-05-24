@@ -1,20 +1,20 @@
 #include "shell.h"
 
 /**
- * start_shell - entry point to start shell
+ * start_shell -to entry point to the start shell
  *
- * @ac: arguments counter.
- * @av: arguments values.
+ * @ac: arguments of counter.
+ * @av: arguments of values.
  * @env: environment.
  *
- * Return: ending status.
+ * Return:the ending status.
  */
 
 int start_shell(int ac, char **av, char **env)
 {
 	char *shell_name = "AZA$ ";
 	char *input = NULL;
-	char **tokens = NULL;
+	char **token = NULL;
 
 	(void)ac;
 
@@ -27,24 +27,24 @@ int start_shell(int ac, char **av, char **env)
 		if (input == NULL)
 			continue;
 
-		tokens = input_tokenizer(input, av);
-		if (tokens == NULL)
+		token = input_tokenizer(input, av);
+		if (token == NULL)
 		{
 			free(input);
 			continue;
 		}
 		free(input);
 
-		execute_commands(tokens, av, env);
+		execute_commands(token, av, env);
 
-		free_arr(tokens);
+		free_arr(token);
 	}
 
 	if (input != NULL)
 		free(input);
 
-	if (tokens != NULL)
-		free_arr(tokens);
+	if (token != NULL)
+		free_arr(token);
 	return (0);
 
 }
